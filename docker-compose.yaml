@@ -1,0 +1,9 @@
+services:
+  detect:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      container_name: python-detect
+      restart: on-failure
+      ports:
+           - "8091:8080"
